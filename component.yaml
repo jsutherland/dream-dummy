@@ -1,0 +1,20 @@
+name: component_a
+description: Gets the sources as defined in the passed sources.json config.
+
+inputs:
+- {name: sources config, type: Data, description: 'JSON config of sources to get'}
+
+outputs:
+- {name: datasets, type: Data, description: 'The source artefacts which were downloaded'}
+
+implementation:
+  container:
+    image: jleighsutherland/get-sources 
+    command: [
+      python3, 
+      /pipelines/component/src/program.py,
+      --sources-config,
+      {inputPath: sources config},
+      --sources-output-path, 
+      {outputPath: datasets},
+    ]
