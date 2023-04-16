@@ -1,4 +1,4 @@
-name: component_a
+name: Component a
 description: Gets the sources as defined in the passed sources.json config.
 
 inputs:
