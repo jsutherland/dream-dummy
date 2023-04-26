@@ -2,23 +2,14 @@ name: Template component spec
 description: Template used to generate new components with a dummy example
 
 inputs:
-- {name: Arg One, type: Data, description: 'Used as --arg-1 input to src/program.py'}
-- {name: Arg Two, type: Data, description: 'Used as --arg-2 input to src/program.py'}
-
-
-outputs:
-- {name: Output One, type: Data, description: 'Leveraged in upstream steps.'}
+- {name: sources config path, type: Data, description: 'Input for sources config'}
 
 implementation:
   container:
-    image: jleighsutherland/dummy # Typically matches the Docker image name in ./build_image.sh.
+    image: jleighsutherland/kubeflow-component-check-and-download-sources
     command: [
       python3, 
       /pipelines/component/src/program.py,
-      --arg-1,
-      {inputPath: Arg One},
-      --arg-2,
-      {inputPath: Arg Two},
-      --sources-output-path, 
-      {outputPath: Output One},
+      --sources-config-path,
+      {inputPath: sources config path}
     ]
