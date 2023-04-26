@@ -1,5 +1,5 @@
-name: Template component spec
-description: Template used to generate new components with a dummy example
+name: Check and download missing sources
+description: Checks sources exist in Minio, and are catalogued in Minio
 
 inputs:
 - {name: sources config path, type: Data, description: 'Input for sources config'}
