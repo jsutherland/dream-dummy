@@ -2,7 +2,11 @@ name: Check and download missing sources
 description: Checks sources exist in Minio, and are catalogued in Minio
 
 inputs:
-- {name: sources config path, type: Data, description: 'Input for sources config'}
+- {name: sources config input path, type: Data, description: 'Path for input sources config.'}
+
+outputs:
+- {name: sources config output path, type: Data, description: 'Path for output sources config.'}
+
 
 implementation:
   container:
@@ -10,6 +14,8 @@ implementation:
     command: [
       python3, 
       /pipelines/component/src/program.py,
-      --sources-config-path,
-      {inputPath: sources config path}
+      --sources-config-input-path,
+      {inputPath: sources config input path},
+      --sources-config-output-path, 
+      {outputPath: sources config output path}
     ]
