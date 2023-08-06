@@ -1,0 +1,16 @@
+project: dream
+provider: local
+registry:
+    registry_type: sql
+    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
+    cache_ttl_seconds: 60
+online_store:
+    registry_type: sql
+    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
+    cache_ttl_seconds: 60
+offline_store:
+    registry_type: sql
+    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
+    cache_ttl_seconds: 60
+    
+entity_key_serialization_version: 2
