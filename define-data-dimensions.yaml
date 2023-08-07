@@ -3,7 +3,7 @@ description: Template used to generate new components with a dummy example
 
 implementation:
   container:
-    image: python
+    image: pysdfjweflweflkjwefljwefthon
     command: [
       echo, 
       hello
