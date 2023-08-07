@@ -4,9 +4,6 @@ description: Template used to generate new components with a dummy example
 inputs:
 - {name: features config input path, type: Data, description: 'Path for input features config.'}
 
-outputs:
-- {name: features config output path, type: Data, description: 'Path for output features config.'}
-
 implementation:
   container:
     image: jleighsutherland/define-data-dimensions
@@ -14,7 +11,5 @@ implementation:
       python3, 
       /pipelines/component/src/program.py,
       --features-config-input-path,
-      {inputPath: features config input path},
-      --features-config-output-path, 
-      {outputPath: features config output path}
+      {inputPath: features config input path}
     ]
