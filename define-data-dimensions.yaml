@@ -3,7 +3,7 @@ description: Template used to generate new components with a dummy example
 
 implementation:
   container:
-    image: jleighsutherland/define-data-dimensions
+    image: python
     command: [
       echo, 
       hello
