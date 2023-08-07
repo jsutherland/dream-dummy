@@ -9,7 +9,12 @@ outputs:
 
 implementation:
   container:
-    image: jleighsutherland/kubeflow-component-check-and-download-sources
+    image: jleighsutherland/define-data-dimensions
     command: [
-      python3
+      python3, 
+      /pipelines/component/src/program.py,
+      --features-config-input-path,
+      {inputPath: features config input path},
+      --features-config-output-path, 
+      {outputPath: features config output path}
     ]
