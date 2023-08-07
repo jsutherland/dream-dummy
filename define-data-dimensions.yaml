@@ -4,9 +4,6 @@ description: Template used to generate new components with a dummy example
 inputs:
 - {name: features config input path, type: Data, description: 'Used as --features-config-input-path input to src/program.py'}
 
-outputs:
-- {name: Output One, type: Data, description: 'Leveraged in upstream steps.'}
-
 implementation:
   container:
     image: jleighsutherland/define-data-dimensions # Typically matches the Docker image name in ./build_image.sh.
@@ -14,7 +11,5 @@ implementation:
       python3, 
       /pipelines/component/src/program.py,
       --features-config-input-path,
-      {inputPath: features config input path},
-      --sources-output-path, 
-      {outputPath: Output One},
+      {inputPath: features config input path}
     ]
