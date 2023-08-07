@@ -1,0 +1,10 @@
+project: dream
+provider: local
+registry:
+    registry_type: sql
+    path: postgresql://postgres:secretpassword@localhost:5432/feast
+    cache_ttl_seconds: 60
+online_store:
+    path: postgresql://postgres:secretpassword@localhost:5432/feast
+
+entity_key_serialization_version: 2
