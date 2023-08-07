@@ -1,9 +1,6 @@
 name: Template component spec
 description: Template used to generate new components with a dummy example
 
-inputs:
-- {name: features config input path, type: Data, description: 'Path for input features config.'}
-
 implementation:
   container:
     image: jleighsutherland/define-data-dimensions
