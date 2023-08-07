@@ -9,7 +9,7 @@ outputs:
 
 implementation:
   container:
-    image: jleighsutherland/define-data-dimensions
+    image: jleighsutherland/kubeflow-component-check-and-download-sources
     command: [
       python3
     ]
