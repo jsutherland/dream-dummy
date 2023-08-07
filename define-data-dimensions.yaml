@@ -8,8 +8,6 @@ implementation:
   container:
     image: jleighsutherland/define-data-dimensions
     command: [
-      python3, 
-      /pipelines/component/src/program.py,
-      --features-config-input-path,
-      {inputPath: features config input path}
+      echo, 
+      hello
     ]
