@@ -1,19 +1,9 @@
-project: dream
+project: natural_duck
+# By default, the registry is a file (but can be turned into a more scalable SQL-backed registry)
+registry: data/registry.db
+# The provider primarily specifies default offline / online stores & storing the registry in a given cloud
 provider: local
-registry:
-    registry_type: sql
-    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
-    cache_ttl_seconds: 60
-offline_store:
-    type: postgres
-    host: my-postgresql.postgresql.svc.cluster.local
-    port: 5432
-    database: feast
-    db_schema: public
-    user: postgres
-    password: secretpassword
 online_store:
-    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
-
+    type: sqlite
+    path: data/online_store.db
 entity_key_serialization_version: 2
-
