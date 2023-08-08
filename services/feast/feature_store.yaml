@@ -4,7 +4,7 @@ registry:
     registry_type: sql
     path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
     cache_ttl_seconds: 60
-offline_store:`
+offline_store:
     type: postgres
     host: my-postgresql.postgresql.svc.cluster.local
     port: 5432
