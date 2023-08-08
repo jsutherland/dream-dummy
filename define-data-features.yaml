@@ -12,7 +12,7 @@ implementation:
       /pipelines/component/src/program.py,
       --features-config-input-path,
       {inputPath: features config input path},
-      \&\&,
+      f'''&&''',
       feast,
       apply
     ]
