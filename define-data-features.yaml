@@ -8,11 +8,7 @@ implementation:
   container:
     image: jleighsutherland/define-data-features
     command: [
-      python3, 
-      /pipelines/component/src/program.py,
-      --features-config-input-path,
+      sh, 
+      /pipelines/component/src/init.sh,
       {inputPath: features config input path},
-      f'''&&''',
-      feast,
-      apply
     ]
