@@ -2,7 +2,6 @@ name: Template component spec
 description: Template used to generate new components with a dummy example
 
 inputs:
-- {name: sources config input path, type: Data, description: 'Path for input sources config.'}
 - {name: features config input path, type: Data, description: 'Path for input features config.'}
 
 implementation:
@@ -11,6 +10,5 @@ implementation:
     command: [
       sh, 
       /pipelines/component/src/init.sh,
-      {inputPath: sources config input path},
-      {inputPath: features config input path}
+      {inputPath: features config input path},
     ]
