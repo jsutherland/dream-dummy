@@ -1,0 +1,70 @@
+
+D
+&
+__dummy"
+__dummy_idJmy_feature_repo
+½æã¦ØÓ¬y½æã¦ØÓ¬y
+Q
+3
+event_timestamp"event_timestampJmy_feature_repo
+½æã¦àô®y½æã¦àô®y1"$5fd44c9b-4a73-4019-a926-fb37f9975d76*½æã¦è¸Ïy2‘
+ò
+gdpmy_feature_repoevent_timestamp"	
+value2€£:µevent_timestamp‚<
+:{"name": "gdp", "query": "SELECT * FROM gdp", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢gdp@
+½æã¦øæ°y½æã¦øæ°y2Á
+¢
+usacpicorminmeimy_feature_repoevent_timestamp"	
+value2€£:Ùevent_timestamp‚T
+R{"name": "usacpicorminmei", "query": "SELECT * FROM usacpicorminmei", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢usacpicorminmei@
+½æã¦Èçµy½æã¦Èçµy2Õ
+¶
+corestickm159sfrbatlmy_feature_repoevent_timestamp"	
+value2€£:èevent_timestamp‚^
+\{"name": "corestickm159sfrbatl", "query": "SELECT * FROM corestickm159sfrbatl", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢corestickm159sfrbatl@
+½æã¦˜ë¹y½æã¦˜ë¹y2‘
+ò
+m1vmy_feature_repoevent_timestamp"	
+value2€£:µevent_timestamp‚<
+:{"name": "m1v", "query": "SELECT * FROM m1v", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢m1v@
+½æã¦°×½y½æã¦°×½y2™
+ú
+wm1nsmy_feature_repoevent_timestamp"	
+value2€£:»event_timestamp‚@
+>{"name": "wm1ns", "query": "SELECT * FROM wm1ns", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢wm1ns@
+½æã¦¬Áy½æã¦¬Áy:µ
+–
+
+usecase_v1my_feature_repo
+usacpicorminmei	
+value
+gdp	
+value!
+corestickm159sfrbatl	
+value
+wm1ns	
+value
+m1v	
+value
+½æã¦ ñÄy½æã¦ ñÄyRê
+
+,feast.infra.online_stores.sqlite.SqliteTable"m
+E/Users/j/Documents/GitHub/my_feature_repo/feature_repo/data/online.db$my_feature_repo_corestickm159sfrbatl
+Œ
+,feast.infra.online_stores.sqlite.SqliteTable"\
+E/Users/j/Documents/GitHub/my_feature_repo/feature_repo/data/online.dbmy_feature_repo_gdp
+Œ
+,feast.infra.online_stores.sqlite.SqliteTable"\
+E/Users/j/Documents/GitHub/my_feature_repo/feature_repo/data/online.dbmy_feature_repo_m1v
+˜
+,feast.infra.online_stores.sqlite.SqliteTable"h
+E/Users/j/Documents/GitHub/my_feature_repo/feature_repo/data/online.dbmy_feature_repo_usacpicorminmei
+Ž
+,feast.infra.online_stores.sqlite.SqliteTable"^
+E/Users/j/Documents/GitHub/my_feature_repo/feature_repo/data/online.dbmy_feature_repo_wm1nsbëevent_timestamp‚T
+R{"name": "usacpicorminmei", "query": "SELECT * FROM usacpicorminmei", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢usacpicorminmeiªmy_feature_repobÍevent_timestamp‚@
+>{"name": "wm1ns", "query": "SELECT * FROM wm1ns", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢wm1nsªmy_feature_repobÇevent_timestamp‚<
+:{"name": "gdp", "query": "SELECT * FROM gdp", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢gdpªmy_feature_repobÇevent_timestamp‚<
+:{"name": "m1v", "query": "SELECT * FROM m1v", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢m1vªmy_feature_repobúevent_timestamp‚^
+\{"name": "corestickm159sfrbatl", "query": "SELECT * FROM corestickm159sfrbatl", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢corestickm159sfrbatlªmy_feature_repoz7
+my_feature_repo$3282bf69-f0af-446d-a7f2-8b04e3e7457b
