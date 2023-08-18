@@ -5,6 +5,8 @@ inputs:
 - {name: sources config input path, type: Data, description: 'Path for input sources config.'}
 - {name: features config input path, type: Data, description: 'Path for input features config.'}
 - {name: feature set name, type: Data, description: 'Name to use for feature set.'}
+- {name: definitions path, type: Data, description: '-'}
+- {name: pipeline name, type: Data, description: '-'}
 
 
 implementation:
@@ -15,5 +17,7 @@ implementation:
       /pipelines/component/src/init.sh,
       {inputPath: sources config input path},
       {inputPath: features config input path},
-      {inputPath: feature set name}
+      {inputPath: feature set name},
+      {inputPath: definitions path},
+      {inputPath: pipeline name}
     ]
