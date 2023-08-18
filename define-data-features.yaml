@@ -17,7 +17,7 @@ implementation:
       /pipelines/component/src/init.sh,
       {inputPath: sources config input path},
       {inputPath: features config input path},
-      {inputPath: feature set name},
-      {inputPath: definitions path},
-      {inputPath: pipeline name}
+      {inputValue: feature set name},
+      {inputValue: definitions path},
+      {inputValue: pipeline name}
     ]
