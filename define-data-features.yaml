@@ -4,6 +4,8 @@ description: Template used to generate new components with a dummy example
 inputs:
 - {name: sources config input path, type: Data, description: 'Path for input sources config.'}
 - {name: features config input path, type: Data, description: 'Path for input features config.'}
+- {name: feature set name, type: Data, description: 'Name to use for feature set.'}
+
 
 implementation:
   container:
@@ -13,4 +15,5 @@ implementation:
       /pipelines/component/src/init.sh,
       {inputPath: sources config input path},
       {inputPath: features config input path},
+      {inputPath: feature set name}
     ]
