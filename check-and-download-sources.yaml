@@ -15,5 +15,5 @@ implementation:
       sh, 
       /pipelines/component/src/init.sh,
       {inputPath: sources config input path},
-      {inputPath: sources config output path},
+      {outputPath: sources config output path}
     ]
