@@ -12,10 +12,8 @@ implementation:
   container:
     image: jleighsutherland/kubeflow-component-check-and-download-sources
     command: [
-      python3, 
-      /pipelines/component/src/program.py,
-      --sources-config-input-path,
+      sh, 
+      /pipelines/component/src/init.sh,
       {inputPath: sources config input path},
-      --sources-config-output-path, 
-      {outputPath: sources config output path}
+      {inputPath: features config input path},
     ]
