@@ -8,7 +8,7 @@ offline_store:
     type: postgres
     host: my-postgresql.postgresql.svc.cluster.local
     port: 5432
-    database: feast
+    database: postgres
     db_schema: public
     user: postgres
     password: secretpassword
@@ -16,7 +16,7 @@ offline_store:
     type: postgres
     host: my-postgresql.postgresql.svc.cluster.local
     port: 5432
-    database: feast
+    database: postgres
     db_schema: public
     user: postgres
     password: secretpassword
