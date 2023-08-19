@@ -12,7 +12,13 @@ offline_store:
     db_schema: public
     user: postgres
     password: secretpassword
-online_store:
-    path: postgresql://postgres:secretpassword@my-postgresql.postgresql.svc.cluster.local:5432/feast
+offline_store:
+    type: postgres
+    host: my-postgresql.postgresql.svc.cluster.local
+    port: 5432
+    database: feast
+    db_schema: public
+    user: postgres
+    password: secretpassword
 
 entity_key_serialization_version: 2

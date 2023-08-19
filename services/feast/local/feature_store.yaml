@@ -4,7 +4,21 @@ registry:
     registry_type: sql
     path: postgresql://postgres:secretpassword@localhost:5432/feast
     cache_ttl_seconds: 60
+offline_store:
+    type: postgres
+    host: localhost
+    port: 5432
+    database: feast
+    db_schema: public
+    user: postgres
+    password: secretpassword
 online_store:
-    path: postgresql://postgres:secretpassword@localhost:5432/feast
+    type: postgres
+    host: localhost
+    port: 5432
+    database: feast
+    db_schema: public
+    user: postgres
+    password: secretpassword
 
 entity_key_serialization_version: 2
