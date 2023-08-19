@@ -12,7 +12,7 @@ offline_store:
     db_schema: public
     user: postgres
     password: secretpassword
-offline_store:
+online_store:
     type: postgres
     host: my-postgresql.postgresql.svc.cluster.local
     port: 5432
