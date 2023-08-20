@@ -1,0 +1,19 @@
+name: Groom SQL sources
+description: Preps the sql sources with timecoding (e.g. event_timestamps) for use with feast. 
+
+inputs:
+- {name: sources config input path, type: Data, description: 'Path for input sources config.'}
+
+outputs:
+- {name: sources config output path, type: Data, description: 'Path for output sources config.'}
+
+
+implementation:
+  container:
+    image: jleighsutherland/groom-sql-sources
+    command: [
+      sh, 
+      /pipelines/component/src/init.sh,
+      {inputPath: sources config input path},
+      {outputPath: sources config output path}
+    ]
