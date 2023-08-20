@@ -1,5 +1,5 @@
 name: Check and download missing sources
-description: Checks sources exist in Minio, and are catalogued in Minio
+description: Checks sources exist in Minio, if not - downloads, loads into SQL and catalogues in Datahub.
 
 inputs:
 - {name: sources config input path, type: Data, description: 'Path for input sources config.'}
