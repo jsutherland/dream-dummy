@@ -1,5 +1,5 @@
-name: Template component spec
-description: Template used to generate new components with a dummy example
+name: Define data features
+description: Configures the feature store for easy upstream consumption of features. 
 
 inputs:
 - {name: sources config input path, type: Data, description: 'Path for input sources config.'}
